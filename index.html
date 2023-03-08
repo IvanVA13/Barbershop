@@ -17,7 +17,7 @@
   </head>
   <body>
     <header>
-      <div class="header-container">
+      <div class="container header-container">
         <a class="link logo" href="/">
           <svg class="logo-icon">
             <use href="./images/icons.svg#icon-logo"></use>
@@ -46,59 +46,61 @@
           <button class="btn primary" type="button">онлайн-запись</button>
         </div>
       </div>
-      <ul class="social-list">
-        <li class="item">
-          <a class="link social-link" href="/">Instagram</a>
-        </li>
-        <li class="item"><a class="link social-link" href="/">Youtube</a></li>
-      </ul>
     </header>
 
     <section class="hero">
-      <div class="section-content">
-        <p class="hero-label">A hair salon for men in Kyiv</p>
-        <h1 class="hero-title">BarberShop</h1>
-        <p>
-          Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
-          вкусом.
-        </p>
+      <div class="container hero-container">
+        <div class="section-content hero-section-content">
+          <p class="section-label hero-label">A hair salon for men in Kyiv</p>
+          <h1 class="hero-title">BarberShop</h1>
+          <p>
+            Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и
+            со вкусом.
+          </p>
+        </div>
+        <ul class="slider-list">
+          <li class="item">
+            <img
+              src="./images/hero/desktop/slider-img-1.jpg"
+              alt="slide-1"
+              width="1125"
+            />
+          </li>
+          <li class="item">
+            <img
+              src="./images/hero/desktop/slider-img-2.jpg"
+              alt="slide-2"
+              width="1125"
+            />
+          </li>
+          <li class="item current">
+            <img
+              src="./images/hero/desktop/slider-img-3.jpg"
+              alt="slide-3"
+              width="1125"
+            />
+          </li>
+        </ul>
+        <ul class="slider-btn-list">
+          <li class="item">
+            <button class="slider-btn last" type="button">Назад</button>
+          </li>
+          <li class="item">
+            <button class="slider-btn" type="button">Вперед</button>
+          </li>
+        </ul>
+        <button class="hero-btn" type="button">
+          <svg class="hero-btn-icon">
+            <use href="./images/icons.svg#icon-slider-navigation"></use>
+          </svg>
+        </button>
+        <ul class="social-list hero-social-list">
+          <li class="item">
+            <a class="link social-link" href="/">Instagram</a>
+          </li>
+          <li class="item"><a class="link social-link" href="/">Youtube</a></li>
+        </ul>
       </div>
-      <ul class="slider-list">
-        <li class="item">
-          <img
-            src="./images/hero/desktop/slider-img-1.jpg"
-            alt="slide-1"
-            width="1125"
-          />
-        </li>
-        <li class="item">
-          <img
-            src="./images/hero/desktop/slider-img-2.jpg"
-            alt="slide-2"
-            width="1125"
-          />
-        </li>
-        <li class="item current">
-          <img
-            src="./images/hero/desktop/slider-img-3.jpg"
-            alt="slide-3"
-            width="1125"
-          />
-        </li>
-      </ul>
-      <ul class="slider-btn-list">
-        <li class="item">
-          <button class="slider-btn last" type="button">Назад</button>
-        </li>
-        <li class="item">
-          <button class="slider-btn" type="button">Вперед</button>
-        </li>
-      </ul>
-      <button class="hero-btn" type="button">
-        <svg class="hero-btn-icon">
-          <use href="./images/icons.svg#icon-slider-navigation"></use>
-        </svg>
-      </button>
     </section>
 
     <section class="section" id="about-us">
@@ -425,7 +427,7 @@
     </div>
     <footer class="footer">
       <div class="container">
-        <span>&copy; Copyright 2020</span>
+        <span class="copy">&copy; Copyright 2020</span>
         <ul class="social-list">
           <li class="item">
             <a class="link social-link" href="/">Instagram</a>
