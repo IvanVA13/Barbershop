@@ -47,7 +47,6 @@
         </div>
       </div>
     </header>
-
     <section class="hero">
       <div class="container hero-container">
         <div class="section-content hero-section-content">
@@ -102,7 +101,6 @@
         </ul>
       </div>
     </section>
-
     <section class="section" id="about-us">
       <div class="container">
         <ul class="about-us-list">
@@ -373,23 +371,37 @@
     <div class="dark-bg">
       <div class="container">
         <section class="section contact-us-form">
-          <h2 class="section-title">Онлайн-запись</h2>
+          <h2 class="form-title">Онлайн-запись</h2>
           <form class="form" action="submit">
-            <div class="form-field-wrapper">
-              <input class="form-field" type="text" placeholder="Имя*" />
-              <input class="form-field" type="text" placeholder="Телефон*" />
+            <div class="form-input-wrapper">
+              <label class="form-field">
+                <input
+                  class="form-input"
+                  type="text"
+                  placeholder=" "
+                  required
+                />
+                <span class="form-label">Имя</span>
+              </label>
+              <label class="form-field">
+                <input
+                  class="form-input"
+                  type="text"
+                  placeholder=" "
+                  required
+                />
+                <span class="form-label">Телефон</span>
+              </label>
             </div>
-            <textarea
-              class="form-field"
-              cols="30"
-              rows="5"
-              placeholder="сообщение"
-            ></textarea>
+            <label class="form-field">
+              <textarea class="form-input" rows="10" placeholder=" "></textarea>
+              <span class="form-label">сообщение</span>
+            </label>
             <button class="btn primary" type="submit">отправить</button>
           </form>
         </section>
         <section class="section contacts" id="contacts">
-          <h2 class="section-title">Контакты</h2>
+          <h2 class="contacts-title">Контакты</h2>
           <address class="address">
             <ul class="contacts-list">
               <li class="item">
@@ -420,7 +432,7 @@
           </address>
           <div>
             <p class="section-label white">время работы</p>
-            <p>Ежедневно с 9:00 до 22:00</p>
+            <span>Ежедневно с 9:00 до 22:00</span>
           </div>
         </section>
       </div>
