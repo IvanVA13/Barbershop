@@ -1,0 +1,16 @@
+.logo {
+  @extend %link;
+  width: 69px;
+  height: 55px;
+
+  color: get-color("third");
+  margin-right: 70px;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  &-icon {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+  }
+}

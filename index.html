@@ -13,12 +13,12 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header>
       <div class="container header-container">
-        <a class="link logo" href="/">
+        <a class="logo" href="/">
           <svg class="logo-icon">
             <use href="./images/icons.svg#icon-logo"></use>
           </svg>
@@ -26,24 +26,24 @@
         <nav class="nav">
           <ul class="nav-list">
             <li class="item">
-              <a class="link nav-link" href="#about-us">О нас</a>
+              <a class="nav-link" href="#about-us">О нас</a>
             </li>
             <li class="item">
-              <a class="link nav-link" href="#prices">Услуги и цены</a>
+              <a class="nav-link" href="#prices">Услуги и цены</a>
             </li>
             <li class="item">
-              <a class="link nav-link" href="#masters">Мастера</a>
+              <a class="nav-link" href="#masters">Мастера</a>
             </li>
             <li class="item">
-              <a class="link nav-link" href="#contacts">Контакты</a>
+              <a class="nav-link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
-        <div class="contact-us">
-          <a class="link contact-link" href="tel:+38(044)-111-11-11"
+        <div class="header-contacts">
+          <a class="header-contacts-link" href="tel:+38(044)-111-11-11"
             >+38 044 111 11 11</a
           >
-          <button class="btn primary" type="button">онлайн-запись</button>
+          <button class="primary-btn" type="button">онлайн-запись</button>
         </div>
       </div>
     </header>
@@ -95,9 +95,9 @@
         </button>
         <ul class="social-list hero-social-list">
           <li class="item">
-            <a class="link social-link" href="/">Instagram</a>
+            <a class="social-link" href="/">Instagram</a>
           </li>
-          <li class="item"><a class="link social-link" href="/">Youtube</a></li>
+          <li class="item"><a class="social-link" href="/">Youtube</a></li>
         </ul>
       </div>
     </section>
@@ -133,7 +133,7 @@
             клиентами "на одной волне". Поэтому, мы всегда готовы
             усовершенствовать каждого, кто к нам приходит!
           </p>
-          <button class="btn secondary" type="button">онлайн-запись</button>
+          <button class="second-btn" type="button">онлайн-запись</button>
         </div>
       </div>
     </section>
@@ -143,31 +143,47 @@
         <h2 class="section-title">Услуги и цены</h2>
         <ul class="prices-list">
           <li class="item">
-            <span>Мужская стрижка от 300 грн.</span>
+            <span>Мужская стрижка</span
+            ><span class="prices-aggregate"><span></span></span
+            ><span>от 300 грн.</span>
           </li>
           <li class="item">
-            <span>Cтрижка у стажера от 50 грн.</span>
+            <span>Cтрижка у стажер</span
+            ><span class="prices-aggregate"><span></span></span
+            ><span> от 50 грн.</span>
           </li>
           <li class="item">
-            <span>Стрижка бороды от 200 грн.</span>
+            <span>Стрижка бороды</span
+            ><span class="prices-aggregate"><span></span></span
+            ><span>от 200 грн.</span>
           </li>
           <li class="item">
-            <span>Стрижка под насадку от 200 грн.</span>
+            <span>Стрижка под насадку</span
+            ><span class="prices-aggregate"><span></span></span
+            ><span>от 200 грн.</span>
           </li>
           <li class="item">
-            <span>Стрижка усов от 200 грн.</span>
+            <span>Стрижка усов</span
+            ><span class="prices-aggregate"><span></span></span
+            ><span>от 200 грн.</span>
           </li>
           <li class="item">
-            <span>Детская стрижка (до 12 лет) от 300 грн.</span>
+            <span>Детская стрижка (до 12 лет)</span
+            ><span class="prices-aggregate"><span></span></span
+            ><span>от 300 грн.</span>
           </li>
           <li class="item">
-            <span>Бритье опасной бритвой от 200 грн.</span>
+            <span>Бритье опасной бритвой</span
+            ><span class="prices-aggregate"><span></span></span
+            ><span>от 200 грн.</span>
           </li>
           <li class="item">
-            <span>Камуфлирование седины от 200 грн.</span>
+            <span>Камуфлирование седины</span
+            ><span class="prices-aggregate"><span></span></span
+            ><span>от 200 грн.</span>
           </li>
         </ul>
-        <button class="btn primary" type="button">онлайн-запись</button>
+        <button class="primary-btn" type="button">онлайн-запись</button>
       </div>
     </section>
     <section class="section">
@@ -215,32 +231,31 @@
             />
             <h3>John Smith</h3>
             <p>Extreme Barber</p>
-
             <ul class="masters-social-list">
               <li class="item">
-                <a class="link master-link" href="https://www.instagram.com/">
-                  <svg class="master-icon">
+                <a class="masters-link" href="https://www.instagram.com/">
+                  <svg class="masters-icon">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="item">
-                <a class="link master-link" href="https://twitter.com/">
-                  <svg class="master-icon">
+                <a class="masters-link" href="https://twitter.com/">
+                  <svg class="masters-icon">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="item">
-                <a class="link master-link" href="https://www.facebook.com/">
-                  <svg class="master-icon">
+                <a class="masters-link" href="https://www.facebook.com/">
+                  <svg class="masters-icon">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="item">
-                <a class="link master-link" href="https://www.linkedin.com/">
-                  <svg class="master-icon">
+                <a class="masters-link" href="https://www.linkedin.com/">
+                  <svg class="masters-icon">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -255,32 +270,31 @@
             />
             <h3>Michele Doe</h3>
             <p>Extreme Barber</p>
-
             <ul class="masters-social-list">
               <li class="item">
-                <a class="link master-link" href="https://www.instagram.com/">
-                  <svg class="master-icon">
+                <a class="masters-link" href="https://www.instagram.com/">
+                  <svg class="masters-icon">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="item">
-                <a class="link master-link" href="https://twitter.com/">
-                  <svg class="master-icon">
+                <a class="masters-link" href="https://twitter.com/">
+                  <svg class="masters-icon">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="item">
-                <a class="link master-link" href="https://www.facebook.com/">
-                  <svg class="master-icon">
+                <a class="masters-link" href="https://www.facebook.com/">
+                  <svg class="masters-icon">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="item">
-                <a class="link master-link" href="https://www.linkedin.com/">
-                  <svg class="master-icon">
+                <a class="masters-link" href="https://www.linkedin.com/">
+                  <svg class="masters-icon">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -298,29 +312,29 @@
 
             <ul class="masters-social-list">
               <li class="item">
-                <a class="link master-link" href="https://www.instagram.com/">
-                  <svg class="master-icon">
+                <a class="masters-link" href="https://www.instagram.com/">
+                  <svg class="masters-icon">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="item">
-                <a class="link master-link" href="https://twitter.com/">
-                  <svg class="master-icon">
+                <a class="masters-link" href="https://twitter.com/">
+                  <svg class="masters-icon">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="item">
-                <a class="link master-link" href="https://www.facebook.com/">
-                  <svg class="master-icon">
+                <a class="masters-link" href="https://www.facebook.com/">
+                  <svg class="masters-icon">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="item">
-                <a class="link master-link" href="https://www.linkedin.com/">
-                  <svg class="master-icon">
+                <a class="masters-link" href="https://www.linkedin.com/">
+                  <svg class="masters-icon">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -370,7 +384,7 @@
     </section>
     <div class="dark-bg">
       <div class="container">
-        <section class="section contact-us-form">
+        <section class="section form-contacts-section">
           <h2 class="form-title">Онлайн-запись</h2>
           <form class="form" action="submit">
             <div class="form-input-wrapper">
@@ -381,7 +395,7 @@
                   placeholder=" "
                   required
                 />
-                <span class="form-label">Имя</span>
+                <span class="form-label">Имя*</span>
               </label>
               <label class="form-field">
                 <input
@@ -390,22 +404,22 @@
                   placeholder=" "
                   required
                 />
-                <span class="form-label">Телефон</span>
+                <span class="form-label">Телефон*</span>
               </label>
             </div>
             <label class="form-field">
               <textarea class="form-input" rows="10" placeholder=" "></textarea>
               <span class="form-label">сообщение</span>
             </label>
-            <button class="btn primary" type="submit">отправить</button>
+            <button class="primary-btn" type="submit">отправить</button>
           </form>
         </section>
         <section class="section contacts" id="contacts">
           <h2 class="contacts-title">Контакты</h2>
-          <address class="address">
+          <address class="contacts-address">
             <ul class="contacts-list">
               <li class="item">
-                <a class="link" href="/">
+                <a class="contacts-link" href="/">
                   <svg class="contacts-icon map-pin-icon">
                     <use href="./images/icons.svg#icon-map-pin"></use>
                   </svg>
@@ -413,7 +427,7 @@
                 >
               </li>
               <li class="item">
-                <a class="link" href="tel:+38(044)-111-11-11">
+                <a class="contacts-link" href="tel:+38(044)-111-11-11">
                   <svg class="contacts-icon phone-icon">
                     <use href="./images/icons.svg#icon-phone"></use>
                   </svg>
@@ -421,7 +435,7 @@
                 >
               </li>
               <li class="item">
-                <a class="link" href="mailto:barbershop@email.com">
+                <a class="contacts-link" href="mailto:barbershop@email.com">
                   <svg class="contacts-icon mail-icon">
                     <use href="./images/icons.svg#icon-mail"></use>
                   </svg>
@@ -442,9 +456,9 @@
         <span class="copy">&copy; Copyright 2020</span>
         <ul class="social-list">
           <li class="item">
-            <a class="link social-link" href="/">Instagram</a>
+            <a class="social-link" href="/">Instagram</a>
           </li>
-          <li class="item"><a class="link social-link" href="/">Youtube</a></li>
+          <li class="item"><a class="social-link" href="/">Youtube</a></li>
         </ul>
       </div>
     </footer>

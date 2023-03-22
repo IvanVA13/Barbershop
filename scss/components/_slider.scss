@@ -1,0 +1,79 @@
+.slider-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-80px);
+  z-index: -1;
+
+  & > .item {
+    height: 0;
+    opacity: 0;
+  }
+  & > .item.current {
+    width: 1125px;
+    height: auto;
+    opacity: 1;
+  }
+}
+
+.slider-btn-list {
+  position: absolute;
+  right: 55px;
+  bottom: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+}
+
+.slider-btn {
+  padding-bottom: 8px;
+  width: 60px;
+
+  color: get-color("second-accent");
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  text-align: right;
+  letter-spacing: 0.1em;
+
+  border: 0;
+  background-color: transparent;
+  transition: color $transition-animation;
+
+  &:not(.last):hover,
+  &:not(.last):focus {
+    color: get-color("accent");
+  }
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    content: "";
+    width: 60px;
+    height: 1px;
+
+    background-color: currentColor;
+  }
+
+  &.last {
+    color: get-color("third-accent");
+    text-align: left;
+  }
+
+  &.last::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: "";
+    width: 60px;
+    height: 1px;
+
+    background-color: currentColor;
+  }
+}

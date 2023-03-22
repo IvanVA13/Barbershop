@@ -1,0 +1,74 @@
+.hero {
+  color: get-color("second");
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  &-container {
+    position: relative;
+    padding-top: 185px;
+    padding-left: 255px;
+    height: 600px;
+  }
+
+  &-section-content {
+    height: 200px;
+  }
+
+  &-label {
+    color: get-color("third-accent");
+  }
+
+  &-title {
+    margin-bottom: 20px;
+
+    color: get-color("second-accent");
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+  }
+
+  &-btn {
+    position: absolute;
+    top: 43.3333%;
+    right: 55px;
+    padding: 20px;
+
+    color: inherit;
+
+    transform: translateY(-43.3333%);
+    border: transparent;
+    background-color: transparent;
+    transition: color $transition-animation;
+
+    &:focus,
+    &:hover {
+      color: get-color("second-accent");
+    }
+
+    &-icon {
+      width: 18px;
+      height: 30px;
+
+      fill: currentColor;
+    }
+  }
+
+  &-social-list {
+    position: absolute;
+    top: 182.5px;
+    left: -262px;
+
+    padding-top: 72px;
+    padding-bottom: 48px;
+    padding-left: 30px;
+    width: 680px;
+
+    transform: rotate(-90deg);
+  }
+}

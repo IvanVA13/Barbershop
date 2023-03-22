@@ -1,0 +1,54 @@
+.contacts {
+  position: relative;
+  padding-left: 100px;
+  width: 50%;
+
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 625px;
+    height: 644px;
+
+    background-image: url(../images/contacts/desktop/contacts-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  &-title {
+    margin-bottom: 40px;
+  }
+
+  &-address {
+    font-style: normal;
+  }
+
+  &-list {
+    margin-bottom: 70px;
+    max-width: 300px;
+
+    & .item {
+      margin-bottom: 20px;
+    }
+  }
+
+  &-link {
+    @extend %link;
+    display: flex;
+    column-gap: 20px;
+
+    padding: 0;
+
+    word-break: normal;
+  }
+
+  &-icon {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
+  }
+}

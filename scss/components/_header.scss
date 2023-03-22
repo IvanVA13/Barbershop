@@ -1,0 +1,28 @@
+.header {
+  &-container {
+    position: relative;
+    @include centerFlex();
+    justify-content: center;
+    padding-top: 25px;
+
+    z-index: 1;
+  }
+
+  &-contacts {
+    @include centerFlex();
+    column-gap: 40px;
+    margin-left: auto;
+
+    color: get-color("second-accent");
+  }
+
+  &-contacts-link {
+    @extend %link;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+}

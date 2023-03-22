@@ -1,0 +1,58 @@
+.dark-bg {
+  color: get-color("second");
+  background-color: get-color("third-bg");
+
+  & h2 {
+    color: get-color("second-accent");
+  }
+
+  & .section-label {
+    color: get-color("third-accent");
+  }
+
+  & .white {
+    color: get-color("second-accent");
+  }
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+
+  &-label {
+    @include centerFlex();
+    column-gap: 20px;
+    margin-bottom: 20px;
+
+    color: get-color("third");
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    &::before {
+      content: "";
+      width: 60px;
+      height: 1px;
+      background-color: currentColor;
+    }
+  }
+
+  &-title {
+    margin-bottom: 20px;
+
+    color: get-color("third");
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+  }
+
+  &-content {
+    width: 500px;
+  }
+}

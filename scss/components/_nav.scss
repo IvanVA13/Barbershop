@@ -1,0 +1,15 @@
+.nav {
+  &-list {
+    @include centerFlex();
+    column-gap: 40px;
+  }
+
+  &-link {
+    @extend %link;
+    color: get-color("second-accent");
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+  }
+}
