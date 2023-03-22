@@ -1,0 +1,21 @@
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+
+  & > .container {
+    justify-content: space-between;
+  }
+
+  & .social-list {
+    flex-flow: row;
+  }
+
+  & .copy {
+    padding-top: 10px;
+
+    color: get-color("second");
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.3636;
+  }
+}

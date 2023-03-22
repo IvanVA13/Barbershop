@@ -1,0 +1,38 @@
+%link {
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  color: inherit;
+  text-decoration: none;
+  word-break: break-all;
+
+  transition: color $transition-animation;
+
+  &:hover,
+  &:focus {
+    color: get-color("accent");
+  }
+}
+
+%btn {
+  padding: 12px 20px;
+
+  color: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  border: 1px solid get-color("accent");
+  border-radius: 25px;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: get-color("accent");
+  }
+
+  transition: color $transition-animation;
+}

@@ -1,0 +1,17 @@
+.examples-container {
+  display: block;
+}
+
+.examples-label {
+  margin-bottom: 44px;
+}
+
+.examples-list {
+  @include centerFlex();
+  column-gap: 30px;
+  width: 100%;
+
+  &-list > .item {
+    width: calc((100% - 90px) / 4);
+  }
+}

@@ -1,0 +1,9 @@
+.primary-btn {
+  @extend %btn;
+  color: get-color("second-accent");
+}
+
+.second-btn {
+  @extend %btn;
+  color: get-color("third");
+}

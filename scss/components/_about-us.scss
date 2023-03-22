@@ -1,0 +1,13 @@
+.about-us-content {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+}
+
+.about-us-list {
+  @include centerFlex();
+
+  column-gap: 30px;
+  margin-right: 64px;
+  width: 570px;
+}
